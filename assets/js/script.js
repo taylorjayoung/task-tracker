@@ -5,6 +5,10 @@ function createTaskHandler() {
     var tasksToDoEl = document.querySelector(".task-list");
     var listItemEl = document.createElement("li");
     listItemEl.className = "task-item";
-    listItemEl.textContent = "This is a new task.";
+
+    var taskName = document.getElementById('task-name')
+    var taskDescription = document.getElementById('task-description')
+    listItemEl.textContent = `${taskName}: taskDescription`;
+
     tasksToDoEl.appendChild(listItemEl);
   }
